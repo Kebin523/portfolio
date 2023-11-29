@@ -1,0 +1,54 @@
+/* header 구현 시작 */
+.s-top-bar {
+  height: 80px;
+	box-shadow: 0 2px 6px rgb(0, 0, 0, 0.1);
+	padding: 0 40px;
+	width: 100%;
+	z-index: 999;
+	background-color: #212121;
+	color: #eaeaea;
+}
+
+.s-top-bar .logo svg {
+	width: 100%;
+	fill: #eaeaea;
+}
+
+.top-bar__menu-box > ul > li {
+	text-align: center;
+	font-size: 18px;
+	padding: 0 20px;
+}
+
+.top-bar__menu-box > ul > li > a {
+	display: block;
+	position: relative;
+	transition: font-weight 0.3 0s ease;
+}
+
+.top-bar__menu-box > ul > li > a:hover {	
+	font-weight: 700;
+}
+
+.top-bar__menu-box a::after {
+	content: attr(title);
+  display: block;
+  font-weight: 700;
+  height: 0px;
+  visibility: hidden;
+}
+
+.s-top-bar__menu-box > ul > li > a > span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background: #eaeaea;
+	transition: all 0.6s 0s ease;
+}
+
+.top-bar__menu-box > ul > li > a:hover > span::after {
+	width: 100%;
+}

@@ -1,0 +1,193 @@
+/* sub2 구현 시작 */
+.product {
+	width: 100%;
+	height: 1010px;
+	display: flex;
+}
+
+.product > .section {
+	width: 50%;
+	height: 100%;
+	margin: 0 10px;
+}
+
+/* img-section 구현 시작 */
+
+.slider-wrap {
+	height: 700px;
+	background-color: #fff;
+}
+
+.img-section > .img-wrap img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider-thumbnail {
+	margin-top: 10px;
+}
+
+.slider-thumbnail .swiper-slide {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.slider-thumbnail .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+/* img-section 구현 끝 */
+
+/* info-section 구현 시작 */
+
+.info-section {
+	border: 1px solid #eaeaea;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.info-tit {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.info-tit > p:first-child {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.info-contents {
+	padding: 0 20px;
+}
+
+.info-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+.info-btn > button {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	margin: 10px 0;
+}
+
+.info-btn > button:first-child {
+	background-color: #eaeaea;
+	color: #212121;
+}
+
+.info-contents {
+	margin: 30px 0;
+	text-align: justify; /*양쪽 정렬*/
+}
+
+.info-tap {
+	height: 500px;
+}
+
+.tab {
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+
+.tab__item {
+  padding: 10px 20px;
+	opacity: 0.5;
+}
+
+.tab__item.active {
+  font-weight: 700;
+	opacity: 1;
+}
+
+.tab__content-wrapper {
+  padding: 20px;
+}
+
+.tab__content {
+  display: none;
+}
+
+.tab__content.active {
+  display: block;
+}
+
+.info-txt > p {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-txt > p > .tit {
+	padding-left: 0;
+	font-weight: 700;
+}
+
+.info-txt > p > .tit::before {
+	content: "";
+}
+
+.info-txt > p > span {
+	position: relative;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.info-txt > p > span::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+}
+
+.info-txt > p > span > .tit {
+	font-weight: 700;
+}
+
+.info-txt > p > span > a {
+	text-decoration: underline;
+}
+
+/* info-section 구현 끝 */
+
+/* related-section 구현 시작 */
+
+.related-section {
+	padding: 20px 0;
+}
+
+.related-tit {
+	padding: 25px 0;
+	font-size: 20px;
+}
+
+.related-info > a {
+	width: 250px;
+	flex-direction: column;
+	margin-right: 20px;
+}
+
+.related-info > a > img {
+	width: 100%;
+}
+
+.related-info > a > .tit {
+	margin-top: 10px;
+}
+
+.colection-info {
+	display: flex;
+}
+
+.colection-product, .related-product {
+	padding: 50px 0;
+}
+/* related-section 구현 끝 */
+/* sub2 구현 끝 */

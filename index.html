@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인페이지</title>
+
+  <!-- 테일윈드 불러오기 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 폰트어썸 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- jquery 연결 -->
+  <script defer src="script/jquery.min.js"></script>
+
+  <!-- swiper 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- 공통 css 연결 -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- mainpage css 연결 -->
+  <link rel="stylesheet" href="style/main.css">
+
+  <!-- 공통 js 연결 -->
+  <script defer src="script/script.js"></script>
+
+  <!-- mainpage js 연결 -->
+  <script defer src="script/main.js"></script>
+
+</head>
+
+<body>
+  <div id="quick-menu"></div>
+
+  <div id="header"></div>
+
+  <div id="mainpage">
+    <!-- main1 구현 시작 -->
+    <section class="main1">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="text-area">
+              <div class="gradient"></div>
+              <div class="text-area__tit">
+                2024 optical collection
+                <div class="text-area__btn">
+                  <div class="btn btn-1">
+                    <a href="sub3.html">컬렉션 보러가기</a>
+                  </div>
+                  <div class="btn btn-2">
+                    <a href="#0">스토리 보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://web-video-resource.gentlemonster.com/assets/stories/24-optical/main/video-src-pc-v3.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-area">
+              <div class="gradient"></div>
+              <div class="text-area__tit">
+                24 optical: AI STUDENT ID
+                <div class="btn">
+                  <a href="#0">AI 학생증 발급받기</a>
+                </div>
+              </div>
+            </div>
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://web-video-resource.gentlemonster.com/assets/stories/24-optical/ai-student-id/main/video-src-pc-v2.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <div class="text-area">
+              <div class="gradient"></div>
+              <div class="text-area__tit">
+                BOLD COLLECTION: 2ND DROP
+                <div class="text-area__btn">
+                  <div class="btn btn-1">
+                    <a href="sub3.html">컬렉션 보러가기</a>
+                  </div>
+                  <div class="btn btn-2">
+                    <a href="#0">스토리 보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <video id="video" autoplay="" loop="" muted="" playsinline="">
+              <source
+                src="https://web-video-resource.gentlemonster.com/assets/stories/bold_second/main/video-src-pc.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="swiper-btn">
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+    </section>
+    <!-- main1 구현 끝 -->
+
+    <!-- main2 구현 시작 -->
+    <section class="main main2">
+      <div class="con mx-auto h-full">
+        <div class="section section1">
+          <div class="img">
+            <figure data-aos="fade-up-right" data-aos-duration="1000">
+              <img src="https://web-resource.gentlemonster.com/event/1691975126.jpg" alt="메인2이미지1">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+          <div class="img">
+            <figure data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="1000">
+              <img src="https://web-resource.gentlemonster.com/event/1695706245.jpg" alt="메인2이미지2">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="main2__tit">
+            <span>COLLABORATION</span>
+            <p>젠틀몬스터와 함께한 다양한 순간을 만나보세요</p>
+          </div>
+        </div>
+        <div class="section section3 flex justify-center items-center">
+          <div class="flex">
+            <div class="img">
+              <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <img src="https://web-resource.gentlemonster.com/event/1687331001.jpg" alt="메인2이미지3">
+                <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+              </figure>
+            </div>
+            <div class="img">
+              <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+                <img src="https://web-resource.gentlemonster.com/event/1690273524.jpg" alt="메인2이미지4">
+                <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+              </figure>
+            </div>
+            <div class="img">
+              <figure data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">
+                <img src="https://web-resource.gentlemonster.com/event/1662529126-1662529126.jpg" alt="메인2이미지5">
+                <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="section section4">
+          <div class="img">
+            <figure data-aos="fade-down" data-aos-duration="1000">
+              <img src="https://web-resource.gentlemonster.com/event/1691975365.jpg" alt="메인2이미지6">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+          <div class="img">
+            <figure data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500">
+              <img src="https://web-resource.gentlemonster.com/event/1670201341.jpg" alt="메인2이미지7">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+          <div class="img">
+            <figure data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2000">
+              <img src="https://web-resource.gentlemonster.com/event/1695705817.jpg" alt="메인2이미지8">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+          <div class="img">
+            <figure data-aos="fade-down" data-aos-duration="1000" data-aos-delay="3000">
+              <img src="https://web-resource.gentlemonster.com/event/1690275044.jpg" alt="메인2이미지9">
+              <a href="#0" class="opacity-0 visibility">컬렉션 바로가기</a>
+            </figure>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- main2 구현 끝 -->
+
+  <!-- main3 구현 시작 -->
+  <div class="main3_tit">
+    <a href="sub5.html" class="tit">OFFLINE STORE</a>
+    <p>오프라인 매장을 확인해보세요.</p>
+  </div>
+  <section class="main main3">
+    <div class="con mx-auto">
+      <div class="hero-center-section">
+        <div class="left-text">SELF SIMILARITY</div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div>
+              <div class="video-wrap">
+                <video id="video" autoplay="" loop="" muted="" playsinline="">
+                  <source src="https://inhouse-resource.gentlemonster.com/store/hanam_store_video_full_final_web.mp4"
+                    type="video/mp4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-center-section">
+        <div class="left-text">THE EVOLUTION</div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="img-wrap">
+                <img src="https://inhouse-resource.gentlemonster.com/store/Dongtan_GM_04.jpg" alt="메인3이미지1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-center-section">
+        <div class="left-text">FUTRUE RETAIL</div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="img-wrap">
+                <img src="https://inhouse-resource.gentlemonster.com/store/01.jpg" alt="메인3이미지2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-center-section">
+        <div class="left-text">Digital Alchemy</div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="video-wrap">
+                <video id="video" autoplay="" loop="" muted="" playsinline="">
+                  <source
+                    src="https://inhouse-resource.gentlemonster.com/store/jamsil_lottetower_store_video_web_final_9mb.mp4"
+                    type="video/mp4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-center-section">
+        <div class="left-text">TIME - SLEEP</div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="video-wrap">
+                <video id="video" autoplay="" loop="" muted="" playsinline="">
+                  <source src="https://inhouse-resource.gentlemonster.com/store/sinsa_1280x720_low.mp4"
+                    type="video/mp4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-center-section">
+        <div class="left-text">SACRIFICE</div>
+        <div class="container">
+          <div class="row justify-center">
+            <div class="col-md-8">
+              <div class="video-wrap">
+                <video id="video" autoplay="" loop="" muted="" playsinline="">
+                  <source src="https://inhouse-resource.gentlemonster.com/store/hongdae_1280x720_low.mp4"
+                    type="video/mp4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <ul class="slide-buttons mx-auto">
+          <li>
+            <a href="sub5.html" class="hover-target" data-hover="스타필드 하남">스타필드 하남</a>
+          </li>
+          <li>
+            <a href="sub5.html" class="hover-target" class="hover-target" data-hover="롯데 동탄점">롯데 동탄점</a>
+          </li>
+          <li>
+            <a href="sub5.html" class="hover-target" data-hover="하우스 도산">하우스 도산</a>
+          </li>
+          <li>
+            <a href="sub5.html" class="hover-target" data-hover="서울 롯데타워">서울 롯데타워</a>
+          </li>
+          <li>
+            <a href="sub5.html" class="hover-target" data-hover="서울 신사점">서울 신사점</a>
+          </li>
+          <li>
+            <a href="sub5.html" class="hover-target" data-hover="서울 홍대점">서울 홍대점</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- main3 구현 끝 -->
+  </div>
+
+  <div id="footer"></div>
+</body>
+
+</html>

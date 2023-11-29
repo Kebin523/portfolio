@@ -1,0 +1,136 @@
+@supports (animation-timeline: scroll()) {
+	/* As we're about to shift content out of .columns, we need it to hide its overflow */
+	.columns {
+		overflow-y: hidden;
+		color: #eaeaea;
+	}
+
+	.column-reverse {
+		/* Flip item order in reverse columns */
+		flex-direction: column-reverse;
+	}
+
+	/* Set up Animation */
+	@keyframes adjust-position {
+		/* Start position: shift entire column up, but not so that it goes out of view */
+		from {
+			transform: translateY(calc(-100% + 100vh));
+		}
+
+		/* End position: shift entire column down, but not so that it goes out of view */
+		to {
+			transform: translateY(calc(100% - 100vh));
+		}
+	}
+
+	/* Hook our animation with the timeline to our columns */
+	.column-reverse {
+		animation: adjust-position linear forwards;
+		animation-timeline: scroll(root block);
+	}
+}
+
+/* Three column layout */
+.columns {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	max-width: 80em;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Inside one column, lay out all items in column direction */
+.column {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+/* Limit site of the images */
+
+.column__item-imgwrap img, .flip {
+	border-radius: 1em;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 0.75;
+	object-fit: cover;
+}
+
+.column__item-caption {
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+
+.flip { 
+  position: relative; 
+  perspective: 1100px;
+}
+
+.card {
+  width: 100%; 
+  height: 100%; 
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+}	
+
+.front, .back {
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+	cursor: pointer;
+}
+
+.front > img {
+  width: 100%;
+}
+
+.back { 
+  background-color: #eaeaea;
+	color: #343434;
+  transform: rotateY(180deg);
+	border-radius: 1em;
+}
+
+.back > .product {
+  margin: 0 20%;
+}
+
+.back .product__info > p {
+  margin: 5px 0;
+	font-size: 14px;
+}
+
+.back .product__info > p:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.back .product__info > .btn {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.back .product__info > .btn > a {
+  display: block;
+	font-size: 14px;
+	font-weight: 700;
+  padding: 10px 0;
+	border: 1px solid #343434;
+	border-radius: 14px;
+	transition: background-color .3s, color .3s;
+}
+
+.back .product__info > .btn:hover > a {
+	background-color: #212121;
+	color: #eaeaea;
+}
+
+.flip.active .card {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,90 @@
+.section {
+	background-color: #212121;
+	color: #eaeaea;
+	padding: 50px;
+}
+
+.tit {
+	padding-bottom: 50px;
+}
+
+.tit > h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.tit > button {
+	border: 1px solid #eaeaea;
+	padding: 10px 20px;
+	margin-top: 25px;
+	transition: background-color .3s, color .3s;
+}
+
+.tit > button:hover {
+	background-color: #eaeaea;
+	color: #212121;
+}
+
+.section-img {
+	height: 450px;
+}
+
+.section-img > .bg-img {
+	width: 800px;
+	height: 450px;
+	position: relative;
+}
+
+.section-img > .bg-img > img {
+	height: 100%;
+}
+
+.bg-img > .product-img {
+	width: 700px;
+	height: 250px;
+	position: absolute;
+	top: 100px;
+	left: 500px;
+	justify-content: center;
+}
+
+.product-img > a {
+	margin: 0 20px;
+}
+
+.product-img img {
+	height: 250px;
+}
+
+.section-img > .bg-img2 {
+	margin-left: auto;
+}
+
+.bg-img2 > .product-img2 {
+	left: -370px;
+}
+
+/* 기존 버튼 디자인 제거 */
+.section .swiper-button-prev::after,
+.section .swiper-button-next::after {
+	display: none;
+}
+
+.section .swiper-container {
+	margin: 0 25px;
+}
+
+.section .swiper-btn {
+	font-size: 30px;
+}
+
+.section .swiper-button-prev,
+.section .swiper-button-next {
+	color: #eaeaea;
+	top: 125px;
+	left: 330px;
+}
+
+.section .swiper-button-prev {
+	left: -360px;
+}

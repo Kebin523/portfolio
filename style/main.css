@@ -1,0 +1,395 @@
+.btn a {
+	font-weight: 500;
+	font-size: 24px;
+	transition: font-weight 0.3s;
+}
+
+.btn a:hover {
+	font-weight: 700;
+}
+
+.main {
+  margin: 50px 0;
+}
+
+/* main1 구현 시작 */
+.main1 {
+  z-index: -50;
+}
+
+.main1 #video {
+	width: auto;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* 기존 버튼 디자인 제거 */
+.main1 .swiper-button-prev::after,
+.main1 .swiper-button-next::after {
+	display: none;
+}
+
+.main1 .swiper-btn {
+	font-size: 50px;
+}
+
+.main1 .swiper-button-prev,
+.main1 .swiper-button-next {
+	color: #212121;
+	padding: 30px;
+}
+
+.main1 .swiper-pagination-bullet-active {
+	background: #eaeaea !important;
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+.swiper-slide .gradient {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 315px;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.7) 100%
+	);
+}
+
+.swiper-slide .text-area__tit {
+	position: absolute;
+	color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+	width: 500px;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-weight: 700;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%, -20%);
+	z-index: 20;
+}
+
+.swiper-slide .text-area__btn {
+  justify-content: space-between;
+  display: flex;
+}
+
+.swiper-slide .text-area__btn .btn {
+  padding: 10px;
+}
+
+.swiper-slide .text-area__tit .btn > a {
+	font-size: 14px;
+	padding: 10px 20px;
+	margin-top: 10px;
+	background-color: transparent;
+	color: #eaeaea;
+	border: 2px solid #eaeaea;
+	transition: background-color .3s, color .3s;
+}
+
+.swiper-slide .text-area__tit .btn:hover > a {
+	background-color: #eaeaea;
+	color: #212121;
+}
+/* mian1 구현 끝 */
+
+/* main2 구현 시작 */
+.main2 {
+	height: 2500px;
+	background-image: linear-gradient(to top, #eaeaea 55%, #212121 45%);
+	color: #eaeaea;
+}
+
+.section figure {
+	width: 350px;
+	position: relative;
+}
+
+.section figure img {
+  filter: grayscale(0);
+  transition: .3s ease-in-out;
+	position: relative;
+}
+
+.section figure:hover img {
+  filter: grayscale(50%);
+}
+
+.section figure:hover a {
+	opacity: 1;
+	visibility: visible;
+}
+
+.section figure a {
+	background-color: #eaeaea;
+	color: #212121;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	transition: all 0.3s ease-in-out;
+}
+
+.section figure a::after {
+	content: ">";
+	margin-left: 10px;
+}
+
+.section {
+	position: relative;
+	height: 540px;
+}
+
+.section > .img {
+	position: absolute;
+}
+
+.section1 > .img:nth-of-type(1) {
+	top: 10%;
+}
+
+.section1 > .img:nth-of-type(2) {
+	top: 30%;
+	right: 0;
+}
+
+.section1 > .img:nth-of-type(2) > figure {
+	width: 450px;
+}
+
+.section2 > .main2__tit {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.section2 > .main2__tit > span {
+	font-size: 72px;
+	font-weight: 700;
+}
+
+.section2 > .main2__tit > p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section3 {
+	height: 810px;
+	margin-top: 270px;
+}
+
+.section3 > .flex > .img {
+	padding: 0 50px;
+}
+
+.section3 > .flex > .img > figure {
+	width: 300px;
+}
+
+.section4 {
+	height: 810px;
+}
+
+.section4 > .img:nth-of-type(1) {
+	left: 0;
+	bottom: 20%;
+}
+
+.section4 > .img:nth-of-type(1) > figure {
+	width: 250px;
+}
+
+.section4 > .img:nth-of-type(2) {
+	top: 10%;
+	left: 22%;
+}
+
+.section4 > .img:nth-of-type(2) > figure {
+	width: 350px;
+}
+
+.section4 > .img:nth-of-type(3) {
+	right: 22%;
+	bottom: 10%;
+}
+
+.section4 > .img:nth-of-type(3) > figure {
+	width: 300px;
+}
+
+.section4 > .img:nth-of-type(4) {
+	top: 20%;
+	right: 0;
+}
+
+.section4 > .img:nth-of-type(4) > figure {
+	width: 250px;
+}
+/* main2 구현 끝 */
+
+/* main3 구현 시작 */
+.main3 {
+  height: 1080px;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+
+.main3_tit {
+  text-align: center;
+  font-size: 18px;
+  color: #eaeaea;
+}
+
+.main3_tit > .tit {
+  font-size: 48px;
+}
+
+.main3 p {
+  font-family: "SUIT-Regular";
+  font-size: 16px;
+  color: #eaeaea;
+  transition: all 300ms linear;
+}
+
+.hero-center-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  max-width: 1280px;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 300ms linear;
+}
+
+.hero-center-section.show {
+  opacity: 1;
+}
+
+.hero-center-section .left-text {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  right: 90%;
+  font-weight: 700;
+  text-align: center;
+  writing-mode: vertical-rl;
+  line-height: 1;
+  font-size: 60px;
+  color: #eaeaea;
+  transition: all 300ms linear;
+}
+
+.img-wrap, .video-wrap {
+  width: 1280px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.02);
+  transform: scale(1.03);
+  transition: all 300ms linear;
+}
+
+.hero-center-section.show .img-wrap {
+  transform: scale(1);
+}
+
+.hero-center-section.show .video-wrap {
+  transform: scale(1);
+}
+
+.img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+  height: 1080px;
+  width: 100%;
+  display: block;
+  z-index: 30 !important;
+  overflow: hidden;
+}
+
+.slide-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 580px;
+  height: 700px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.slide-buttons li {
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px 0;
+  transition: all 300ms linear;
+}
+
+.slide-buttons li a {
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #eaeaea;
+  opacity: 0.3;
+  transition: all 300ms linear;
+}
+
+.slide-buttons li.active a {
+  opacity: 1;
+}
+
+.slide-buttons li.active a::after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.slide-buttons li a:focus,
+.slide-buttons li a:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.slide-buttons li a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  font-size: 70px;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 0;
+  max-height: 0;
+  color: #eaeaea;
+  content: attr(data-hover);
+  transition: max-height 0.4s;
+}
+/* main3 구현 끝 */
